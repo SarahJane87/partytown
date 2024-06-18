@@ -60,6 +60,7 @@
     "utils/"
   ],
   "scripts": {
+    "prepare": "npm run build.prod",
     "build": "tsc && rollup -c scripts/rollup.config.js",
     "build.prod": "tsc && rollup -c scripts/rollup.config.js --configReleaseBuild",
     "build.site": "npm run build && cd docs/site && npm i && npm run build && node ../../scripts/copy-site.cjs",
